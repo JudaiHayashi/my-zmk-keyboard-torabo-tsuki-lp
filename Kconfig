@@ -1,0 +1,4 @@
+config ZMK_INPUT_PROCESSOR_BLE_PROFILE_TRANSFORM
+    bool "BLE profile transform input processor"
+    default y
+    depends on DT_HAS_ZMK_INPUT_PROCESSOR_BLE_PROFILE_TRANSFORM_ENABLED && ZMK_INPUT_LISTENER && ZMK_BLE

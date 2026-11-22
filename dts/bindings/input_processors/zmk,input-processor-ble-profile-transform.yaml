@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT
+
+description: Input processor for inverting values only on selected BLE profiles
+
+compatible: "zmk,input-processor-ble-profile-transform"
+
+include: ip_one_param.yaml
+
+properties:
+  type:
+    type: int
+  x-codes:
+    type: array
+    required: true
+  y-codes:
+    type: array
+    required: true
+  profiles:
+    type: array
+    required: true
